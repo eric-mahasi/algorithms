@@ -2,7 +2,7 @@
 Minimal and clean example implementations of data structures and algorithms in Python 3.
 
 # Contributing
-Thanks for your interest in contributing! There are many ways to contribute to this project. Get started here.
+Thanks for your interest in contributing! There are many ways to contribute to this project. [Get started here.](CONTRIBUTING.md)
 
 # List of Implementations
 - Arrays
