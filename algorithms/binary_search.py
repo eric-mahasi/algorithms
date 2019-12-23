@@ -13,6 +13,13 @@ def display():
 def binary_search(array, x):
     """Find the position of a target value, x, in a sorted array. Time
     complexity of O(log n).
+
+    Parameters
+    ----------
+    array : iterable
+        A list of sorted numbers
+    x : int
+        The number to be searched for
     """
     lower_bound = 0
     upper_bound = len(array) - 1
