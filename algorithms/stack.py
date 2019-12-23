@@ -1,20 +1,31 @@
-class Stack(object):
+"""This script implements a stack in Python 3."""
+
+
+class Stack:
+    """
+    A class used to represent a stack
+
+    ...
+
+    Attributes
+    ----------
+    top : int
+        a variable that points to the of the top of the stack
+    max_size : int
+        the largest the stack can be
+    """
     def __init__(self):
         self.top = 0
-        self.MAXSIZE = 10
-        self.my_stack = [None] * self.MAXSIZE
+        self.max_size = 10
+        self.my_stack = [None] * self.max_size
 
     def is_full(self):
-        if self.top == self.MAXSIZE:
-            return True
-        else:
-            return False
+        """Checks if the all the spaces in the stack are filled."""
+        return bool(self.top == self.max_size)
 
     def is_empty(self):
-        if self.top == -1:
-            return True
-        else:
-            return False
+        """Checks if there are no items in the stack."""
+        return bool(self.top == -1)
 
     def peek(self):
         """Returns the item at the top of the stack."""
@@ -37,7 +48,7 @@ class Stack(object):
 
     def push(self, data):
         """Inserts a new item into the stack.
-        
+
         Parameters
         ----------
         data : int
@@ -49,6 +60,7 @@ class Stack(object):
         else:
             self.top = self.top + 1
             self.my_stack[self.top] = data
+            return 0
 
 
 if __name__ == '__main__':
