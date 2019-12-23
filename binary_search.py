@@ -1,12 +1,19 @@
+"""This script demonstrates the binary search algorithm in Python 3."""
+
 ages = [1, 3, 7, 10, 11, 13, 15, 16, 19, 20]
 
 
 def display():
+    """Prints all the items in the list."""
+    print("The ages are: ")
     for i in range(len(ages)):
         print(ages[i])
 
 
 def binary_search(x):
+    """Find the position of a target value, x in a sorted array. Time
+    complexity of O(log n).
+    """
     lower_bound = 0
     upper_bound = len(ages) - 1
     while True:
