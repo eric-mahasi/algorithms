@@ -11,9 +11,18 @@ def display():
     print("\n")
 
 
-def insertion_sort():
+def insertion_sort(array):
     """Build the final sorted list one item at a time. Time complexity of
     O(n^2).
+
+    Parameters
+    ----------
+    array : iterable
+        A list of unsorted numbers
+    Returns
+    -------
+    array : iterable
+        A list of sorted numbers
     """
     for i in range(len(AGES)):
         temp = AGES[i]
@@ -23,8 +32,10 @@ def insertion_sort():
             j = j - 1
         AGES[j] = temp
 
+    return array
+
 
 if __name__ == '__main__':
     display()
-    insertion_sort()
+    insertion_sort(AGES)
     display()
