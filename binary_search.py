@@ -11,7 +11,7 @@ def display():
 
 
 def binary_search(x):
-    """Find the position of a target value, x in a sorted array. Time
+    """Find the position of a target value, x, in a sorted array. Time
     complexity of O(log n).
     """
     lower_bound = 0
