@@ -7,7 +7,7 @@ def display():
     """Prints all the items in the list."""
     print("The ages are: ")
     for i in range(len(AGES)):
-        print(i)
+        print(AGES[i])
     print("\n")
 
 
