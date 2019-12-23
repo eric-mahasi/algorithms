@@ -10,20 +10,20 @@ def display():
         print(AGES[i])
 
 
-def linear_search(x):
+def linear_search(array, x):
     """Sequentially check each element of the list until a match is found or
     until the whole list has been searched. Time complexity of O(n).
     """
     for i in range(len(AGES)):
-        if x == AGES[i]:
-            print("A student aged ", x, " was found.")
-            return True
+        if AGES[i] == x:
+            print("A student aged", x, "was found.")
+            return 0
         else:
             print("A student aged", x, "was not found.")
-            return False
+            return -1
 
 
 if __name__ == '__main__':
     display()
     search_key = int(input("Enter an age to search for: "))
-    linear_search(search_key)
+    linear_search(AGES, search_key)
