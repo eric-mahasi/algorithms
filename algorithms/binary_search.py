@@ -10,22 +10,22 @@ def display():
         print(AGES[i])
 
 
-def binary_search(x):
+def binary_search(array, x):
     """Find the position of a target value, x, in a sorted array. Time
     complexity of O(log n).
     """
     lower_bound = 0
-    upper_bound = len(AGES) - 1
+    upper_bound = len(array) - 1
     while True:
         mid = int((lower_bound + upper_bound) / 2)
-        if x == AGES[mid]:
+        if x == array[mid]:
             print("A student aged", x, "was found.")
             return 0
         elif lower_bound > upper_bound:
             print("A student aged", x, "was not found.")
             return -1
         else:
-            if x < AGES[mid]:
+            if x < array[mid]:
                 upper_bound = mid - 1
             else:
                 lower_bound = mid + 1
@@ -34,4 +34,4 @@ def binary_search(x):
 if __name__ == '__main__':
     display()
     search_key = int(input("Enter an age to search for: "))
-    binary_search(search_key)
+    binary_search(AGES, search_key)
