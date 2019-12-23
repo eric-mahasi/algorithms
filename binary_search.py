@@ -20,10 +20,10 @@ def binary_search(x):
         mid = int((lower_bound + upper_bound) / 2)
         if x == AGES[mid]:
             print("A student aged", x, "was found.")
-            return True
+            return 0
         elif lower_bound > upper_bound:
             print("A student aged", x, "was not found.")
-            return False
+            return -1
         else:
             if x < AGES[mid]:
                 upper_bound = mid - 1
