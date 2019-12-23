@@ -11,17 +11,18 @@ def display():
     print("\n")
 
 
-def bubble_sort():
+def bubble_sort(array):
     """Repeatedly step through the list, compare adjacent items and swap
     them if they are in the wrong order. Time complexity of O(n^2).
     """
-    for i in range(len(AGES) - 1):
-        for j in range(len(AGES) - 1 - i):
-            if AGES[j] > AGES[j + 1]:
-                AGES[j], AGES[j + 1] = AGES[j + 1], AGES[j]
+    for i in range(len(array) - 1):
+        for j in range(len(array) - 1 - i):
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
+    return array
 
 
 if __name__ == '__main__':
     display()
-    bubble_sort()
+    bubble_sort(AGES)
     display()
