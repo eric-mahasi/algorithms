@@ -31,6 +31,10 @@ class Stack:
         """Returns the item at the top of the stack."""
         return self.my_stack[self.top]
 
+    def size(self):
+        """Returns the size of the stack."""
+        return len(self.my_stack)
+
     def pop(self):
         """Deletes an item from the stack.
         Returns
