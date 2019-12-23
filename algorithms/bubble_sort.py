@@ -14,6 +14,15 @@ def display():
 def bubble_sort(array):
     """Repeatedly step through the list, compare adjacent items and swap
     them if they are in the wrong order. Time complexity of O(n^2).
+
+    Parameters
+    ----------
+    array : iterable
+        A list of unsorted numbers
+    Returns
+    -------
+    array : iterable
+        A list of sorted numbers
     """
     for i in range(len(array) - 1):
         for j in range(len(array) - 1 - i):
