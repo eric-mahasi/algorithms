@@ -6,7 +6,7 @@ from algorithms import stack
 class TestStack(unittest.TestCase):
     def test_stack_on_create_size(self):
         s = stack.Stack()
-        self.assertEqual(10, s.size())
+        self.assertEqual(s.max_size, s.size())
 
     def test_is_empty_on_create(self):
         s = stack.Stack()
