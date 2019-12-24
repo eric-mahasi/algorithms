@@ -4,7 +4,7 @@ from algorithms import stack
 
 
 class TestStack(unittest.TestCase):
-    def test_stack_on_create_size(self):
+    def test_stack_size_on_create(self):
         s = stack.Stack()
         self.assertEqual(s.max_size, s.size())
 
@@ -20,7 +20,7 @@ class TestStack(unittest.TestCase):
         s.push(2)
         self.assertEqual(2, s.pop())
 
-    def test_push_2_pop_2(self):
+    def test_push_3_pop_2(self):
         s = stack.Stack()
         s.push(4)
         s.push(6)
