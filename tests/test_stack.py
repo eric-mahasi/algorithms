@@ -11,8 +11,7 @@ class TestStack(unittest.TestCase):
     def test_is_empty_on_create(self):
         s = stack.Stack()
         for i in range(s.size()):
-            if s.my_stack[i] is None:
-                self.assertEqual(s.my_stack[i], None)
+            self.assertEqual(s.my_stack[i], None)
 
     def test_push_3_pop1(self):
         s = stack.Stack()
