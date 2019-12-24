@@ -10,7 +10,7 @@ class Stack:
     Attributes
     ----------
     top : int
-        a variable that points to the of the top of the stack
+        a variable that points to the top of the top of the stack
     max_size : int
         the largest the stack can be
     """
