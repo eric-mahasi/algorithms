@@ -36,10 +36,6 @@ Some things that will increase the chance that your pull request is accepted:
 * You may also explain the output using a minimal example.
 * Write a [good commit message][commit].
 
-## Collaborators
-You can ask for any help or clarifications from the collaborators.  
-[Antony Rapando](https://github.com/Ace1012)
-
 [fork]: https://help.github.com/articles/fork-a-repo/
 [docstr]: https://www.python.org/dev/peps/pep-0257/#multi-line-docstrings
 [commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
